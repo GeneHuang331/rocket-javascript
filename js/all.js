@@ -2,7 +2,7 @@ var bodyEl = document.body;
 bodyEl.addEventListener('keydown',shootRocket);
 function shootRocket(e) {
     var key = e.keyCode;
-    console.log(key);
+    // console.log(key);
     switch (key) {
         case 49:
             document.querySelector('.rocket-1').style.bottom = '1800px';
@@ -56,4 +56,16 @@ function btnShootRocket(e){
 
 
     }
+}
+
+var reEl = document.querySelector('.btnReset');
+reEl.addEventListener('click',resetRocket);
+
+function resetRocket(){
+    var rocketEl = document.querySelectorAll('.rocket');
+    // console.log(rocketEl);
+    for(var i = 0; i<rocketEl.length ;i++){
+        rocketEl[i].style.bottom = '0px';
+    }
+
 }
