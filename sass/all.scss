@@ -1,0 +1,44 @@
+.container{
+    position: relative;
+    width: 1500px;
+    height: 800px;
+    margin: 0 auto;
+
+    background: url('../image/bg.jpg');
+    background-size: cover;
+    .rocket{
+        position: absolute;
+        bottom: 0;
+        width: 600px;
+        height: 500px;
+        transition: all 1s cubic-bezier(1, 0, 1, 1);
+    }
+    .rocket-1{
+        left: 0;
+    }
+    .rocket-2{
+        left: 300px;
+    }
+    .rocket-3{
+        left: 600px;
+    }
+    .btn{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom:20px;
+    }
+     .btn:hover{
+        box-shadow: 3px 3px 5px #0a0a0a;
+    }
+    .btn1{
+        left: 275px;
+    }
+    .btn2{
+        left: 575px;
+    }
+    .btn3{
+        left: 875px;
+    }
+    
+}
